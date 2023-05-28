@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #dde6ed;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.box {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10%;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  font-size: 5em;
+  line-height: 5rem;
+  margin: 0.5rem;
+  font-family: "Noto Sans", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.X {
+  color: #ff6000;
+}
+
+.O {
+  color: #27e1c1;
+}
+
+.box:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  place-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background-color: #00bfa6;
+  padding: 15px 35px;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.4s;
+  font-weight: 700;
+}
+
+.btn span:last-child {
+  display: none;
+}
+
+.btn:hover {
+  transition: 0.4s;
+  background-color: #0c8575;
+}
+
+.btn:active {
+  background-color: #87dbd0;
+}
+
+.player-status {
+  color: #27374d;
+  font-size: 35px;
+  letter-spacing: 1.5px;
+}
+
+.highlight {
+  background-color: #526d82;
+}
